@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Interactive Navigation Menu</title>
+  <style>
+    /* CSS styles for the navigation menu */
+    :root {
+      --main-color-light: #c4e8c2;
+      --main-color: #aecfa4;
+      --main-color-dark: #6bbd99;
+      --main-color-darker: #46a094;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f00;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--main-color-darker);
+    }
+
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #navbar li {
+      float: left;
+    }
+
+    #navbar li a {
+      display: block;
+      color: whitesmoke;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #navbar li a:hover:not(.active) {
+      background-color: var(--main-color-dark);
+    }
+
+    .box1 {
+      background-color: var(--main-color-light);
+      width: 100px;
+      height: 100px;
+    }
+
+    .flex-con {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 120px;
+    }
+
+    .flex-box1 {
+      width: 1200px;
+      height: 200px;
+      background-color: var(--main-color-light);
+      border-radius: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-box2 {
+      width: 1200px;
+      height: 200px;
+      background-color: var(--main-color);
+      border-radius: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-box3 {
+      width: 1200px;
+      height: 200px;
+      background-color: var(--main-color-dark);
+      border-radius: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-box4 {
+      width: 1200px;
+      height: 200px;
+      background-color: var(--main-color-darker);
+      border-radius: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="flex-con">
+    <div class="flex-box1"><h1>Prodigy InfoTech</h1></div>
+    <div class="flex-box2"><h2>Prodigy InfoTech</h2></div>
+    <div class="flex-box3"><h3>Prodigy InfoTech</h3></div>
+    <div class="flex-box4"><h4>Prodigy InfoTech</h4></div>
+  </div>
+
+
+  </div>
+</body>
+
+</html>
